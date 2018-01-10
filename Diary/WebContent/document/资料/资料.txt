@@ -1,0 +1,1 @@
+<script type="text/javascript">	function checkForm(){		var nickName=document.getElementById("nickName").value;		if(nickName==null||nickName==""){			document.getElementById("error").innerHTML="昵称不能为空！";			return false;		}		return true;	}</script>
