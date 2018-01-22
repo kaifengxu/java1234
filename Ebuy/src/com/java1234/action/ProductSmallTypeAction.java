@@ -115,7 +115,7 @@ public class ProductSmallTypeAction extends ActionSupport{
 		String []idsStr=ids.split(",");
 		for(int i=0;i<idsStr.length;i++){
 			if(productService.existProductWithSmallTypeId(Integer.parseInt(idsStr[i]))){
-				result.put("exist", "商品小类包含商品");
+				result.put("exist", "鍟嗗搧灏忕被鍖呭惈鍟嗗搧");
 			}else{
 				ProductSmallType productSmallType=productSmallTypeService.getProductSmallTypeById(Integer.parseInt(idsStr[i]));
 				productSmallTypeService.delete(productSmallType);				
@@ -130,7 +130,7 @@ public class ProductSmallTypeAction extends ActionSupport{
 		JSONArray jsonArray=new JSONArray();
 		JSONObject jsonObject=new JSONObject();
 		jsonObject.put("id", "");
-		jsonObject.put("name", "请选择...");
+		jsonObject.put("name", "璇烽�夋嫨...");
 		jsonArray.add(jsonObject);
 		List<ProductSmallType> productSmallTypeList=productSmallTypeService.findProductSmallTypeList(s_productSmallType,null);
 		JsonConfig jsonConfig=new JsonConfig();

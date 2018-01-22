@@ -1,21 +1,21 @@
 package com.java1234.util;
 
 /**
- * µ¼º½¹¤¾ßÀà
+ * å¯¼èˆªå·¥å…·ç±»
  * @author Administrator
  *
  */
 public class NavUtil {
 
 	/**
-	 * Éú³Éµ¼º½´úÂë
+	 * ç”Ÿæˆå¯¼èˆªä»£ç 
 	 * @param subName
 	 * @return
 	 */
 	public static String genNavCode(String subName){
 		StringBuffer navCode=new StringBuffer();
-		navCode.append("ÄúÏÖÔÚµÄÎ»ÖÃ£º");
-		navCode.append("<a href='index.jsp'>Ê×Ò³</a>&nbsp;");
+		navCode.append("æ‚¨ç°åœ¨çš„ä½ç½®ï¼š");
+		navCode.append("<a href='index.jsp'>é¦–é¡µ</a>&nbsp;");
 		navCode.append("&gt; ");
 		navCode.append(subName);
 		return navCode.toString();

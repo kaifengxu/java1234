@@ -145,7 +145,7 @@ public class ShoppingAction extends ActionSupport implements ServletRequestAware
 		session.setAttribute("shoppingCart", shoppingCart);
 		
 		mainPage="shopping/shopping.jsp";
-		navCode=NavUtil.genNavCode("¹ºÎï³µ");
+		navCode=NavUtil.genNavCode("è´­ç‰©è½¦");
 		return SUCCESS;
 	}
 	
@@ -187,7 +187,7 @@ public class ShoppingAction extends ActionSupport implements ServletRequestAware
 	
 	public String list()throws Exception{
 		mainPage="shopping/shopping.jsp";
-		navCode=NavUtil.genNavCode("¹ºÎï³µ");
+		navCode=NavUtil.genNavCode("è´­ç‰©è½¦");
 		return SUCCESS;
 	}
 

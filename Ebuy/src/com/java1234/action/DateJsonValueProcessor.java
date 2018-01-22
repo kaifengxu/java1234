@@ -6,7 +6,7 @@ import net.sf.json.JsonConfig;
 import net.sf.json.processors.JsonValueProcessor;
 
 /**
- * json-lib ÈÕÆÚ´¦ÀíÀà
+ * json-lib æ—¥æœŸå¤„ç†ç±»
  * @author Administrator
  *
  */

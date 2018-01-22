@@ -1,15 +1,15 @@
 package com.java1234.entity;
 
 /**
- * ·ÖÒ³ModelÀà
+ * åˆ†é¡µModelç±»
  * @author 
  *
  */
 public class PageBean {
 
-	private int page; // µÚ¼¸Ò³
-	private int pageSize; // Ã¿Ò³¼ÇÂ¼Êı
-	private int start;  // ÆğÊ¼Ò³
+	private int page; // ç¬¬å‡ é¡µ
+	private int pageSize; // æ¯é¡µè®°å½•æ•°
+	private int start;  // èµ·å§‹é¡µ
 	
 	
 	public PageBean(int page, int pageSize) {

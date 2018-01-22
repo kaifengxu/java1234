@@ -8,24 +8,24 @@ import net.sf.json.JsonConfig;
 import net.sf.json.processors.JsonValueProcessor;
 
 /**
- * ½â¾ö¶ÔÏó¼¶ÁªÎÊÌâ
+ * è§£å†³å¯¹è±¡çº§è”é—®é¢˜
  * @author Administrator
  *
  */
 public class ObjectJsonValueProcessor implements JsonValueProcessor{
 
 	/**
-	 * ±£ÁôµÄ×Ö¶Î
+	 * ä¿ç•™çš„å­—æ®µ
 	 */
 	private String[] properties;  
 	
 	/**
-	 * ´¦ÀíÀàĞÍ
+	 * å¤„ç†ç±»å‹
 	 */
 	private Class<?> clazz;  
 	
 	/**
-	 * ¹¹Ôì·½·¨ 
+	 * æ„é€ æ–¹æ³• 
 	 * @param properties
 	 * @param clazz
 	 */

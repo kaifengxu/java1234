@@ -6,7 +6,7 @@ import java.util.List;
 import com.java1234.entity.PageBean;
 
 /**
- * »ù´¡Êı¾İ¿â²Ù×÷Àà
+ * åŸºç¡€æ•°æ®åº“æ“ä½œç±»
  * 
  * @author ss
  * 
@@ -14,7 +14,7 @@ import com.java1234.entity.PageBean;
 public interface BaseDAO<T> {
 
 	/**
-	 * ±£´æÒ»¸ö¶ÔÏó
+	 * ä¿å­˜ä¸€ä¸ªå¯¹è±¡
 	 * 
 	 * @param o
 	 * @return
@@ -22,34 +22,34 @@ public interface BaseDAO<T> {
 	public Serializable save(T o);
 
 	/**
-	 * É¾³ıÒ»¸ö¶ÔÏó
+	 * åˆ é™¤ä¸€ä¸ªå¯¹è±¡
 	 * 
 	 * @param o
 	 */
 	public void delete(T o);
 
 	/**
-	 * ¸üĞÂÒ»¸ö¶ÔÏó
+	 * æ›´æ–°ä¸€ä¸ªå¯¹è±¡
 	 * 
 	 * @param o
 	 */
 	public void update(T o);
 
 	/**
-	 * ±£´æ»ò¸üĞÂ¶ÔÏó
+	 * ä¿å­˜æˆ–æ›´æ–°å¯¹è±¡
 	 * 
 	 * @param o
 	 */
 	public void saveOrUpdate(T o);
 	
 	/**
-	 * ºÏ²¢¶ÔÏó
+	 * åˆå¹¶å¯¹è±¡
 	 * @param o
 	 */
 	public void merge(T o);
 
 	/**
-	 * ²éÑ¯
+	 * æŸ¥è¯¢
 	 * 
 	 * @param hql
 	 * @return
@@ -57,7 +57,7 @@ public interface BaseDAO<T> {
 	public List<T> find(String hql);
 
 	/**
-	 * ²éÑ¯¼¯ºÏ
+	 * æŸ¥è¯¢é›†åˆ
 	 * 
 	 * @param hql
 	 * @param param
@@ -66,7 +66,7 @@ public interface BaseDAO<T> {
 	public List<T> find(String hql, Object[] param);
 
 	/**
-	 * ²éÑ¯¼¯ºÏ
+	 * æŸ¥è¯¢é›†åˆ
 	 * 
 	 * @param hql
 	 * @param param
@@ -75,20 +75,20 @@ public interface BaseDAO<T> {
 	public List<T> find(String hql, List<Object> param);
 
 	/**
-	 * ²éÑ¯¼¯ºÏ(´ø·ÖÒ³)
+	 * æŸ¥è¯¢é›†åˆ(å¸¦åˆ†é¡µ)
 	 * 
 	 * @param hql
 	 * @param param
 	 * @param page
-	 *            ²éÑ¯µÚ¼¸Ò³
+	 *            æŸ¥è¯¢ç¬¬å‡ é¡µ
 	 * @param rows
-	 *            Ã¿Ò³ÏÔÊ¾¼¸Ìõ¼ÇÂ¼
+	 *            æ¯é¡µæ˜¾ç¤ºå‡ æ¡è®°å½•
 	 * @return
 	 */
 	public List<T> find(String hql, Object[] param, PageBean pageBean);
 
 	/**
-	 * ²éÑ¯¼¯ºÏ(´ø·ÖÒ³)
+	 * æŸ¥è¯¢é›†åˆ(å¸¦åˆ†é¡µ)
 	 * 
 	 * @param hql
 	 * @param param
@@ -99,17 +99,17 @@ public interface BaseDAO<T> {
 	public List<T> find(String hql, List<Object> param, PageBean pageBean);
 
 	/**
-	 * »ñµÃÒ»¸ö¶ÔÏó
+	 * è·å¾—ä¸€ä¸ªå¯¹è±¡
 	 * 
 	 * @param c
-	 *            ¶ÔÏóÀàĞÍ
+	 *            å¯¹è±¡ç±»å‹
 	 * @param id
 	 * @return Object
 	 */
 	public T get(Class<T> c, Serializable id);
 
 	/**
-	 * »ñµÃÒ»¸ö¶ÔÏó
+	 * è·å¾—ä¸€ä¸ªå¯¹è±¡
 	 * 
 	 * @param hql
 	 * @param param
@@ -118,7 +118,7 @@ public interface BaseDAO<T> {
 	public T get(String hql, Object[] param);
 
 	/**
-	 * »ñµÃÒ»¸ö¶ÔÏó
+	 * è·å¾—ä¸€ä¸ªå¯¹è±¡
 	 * 
 	 * @param hql
 	 * @param param
@@ -127,7 +127,7 @@ public interface BaseDAO<T> {
 	public T get(String hql, List<Object> param);
 
 	/**
-	 * select count(*) from Àà
+	 * select count(*) from ç±»
 	 * 
 	 * @param hql
 	 * @return
@@ -135,7 +135,7 @@ public interface BaseDAO<T> {
 	public Long count(String hql);
 
 	/**
-	 * select count(*) from Àà
+	 * select count(*) from ç±»
 	 * 
 	 * @param hql
 	 * @param param
@@ -144,7 +144,7 @@ public interface BaseDAO<T> {
 	public Long count(String hql, Object[] param);
 
 	/**
-	 * select count(*) from Àà
+	 * select count(*) from ç±»
 	 * 
 	 * @param hql
 	 * @param param
@@ -153,24 +153,24 @@ public interface BaseDAO<T> {
 	public Long count(String hql, List<Object> param);
 
 	/**
-	 * Ö´ĞĞHQLÓï¾ä
+	 * æ‰§è¡ŒHQLè¯­å¥
 	 * 
 	 * @param hql
-	 * @return ÏìÓ¦ÊıÄ¿
+	 * @return å“åº”æ•°ç›®
 	 */
 	public Integer executeHql(String hql);
 
 	/**
-	 * Ö´ĞĞHQLÓï¾ä
+	 * æ‰§è¡ŒHQLè¯­å¥
 	 * 
 	 * @param hql
 	 * @param param
-	 * @return ÏìÓ¦ÊıÄ¿
+	 * @return å“åº”æ•°ç›®
 	 */
 	public Integer executeHql(String hql, Object[] param);
 
 	/**
-	 * Ö´ĞĞHQLÓï¾ä
+	 * æ‰§è¡ŒHQLè¯­å¥
 	 * 
 	 * @param hql
 	 * @param param
@@ -179,7 +179,7 @@ public interface BaseDAO<T> {
 	public Integer executeHql(String hql, List<Object> param);
 
 	/**
-	 * Ö´ĞĞSQLÓï¾ä
+	 * æ‰§è¡ŒSQLè¯­å¥
 	 * @param sql
 	 * @return
 	 */

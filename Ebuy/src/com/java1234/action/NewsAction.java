@@ -95,7 +95,7 @@ public class NewsAction extends ActionSupport{
 	public String showNews()throws Exception{
 		news=newsService.getNewsById(newsId);
 		mainPage="news/newsDetails.jsp";
-		navCode=NavUtil.genNavCode("新闻信息");
+		navCode=NavUtil.genNavCode("鏂伴椈淇℃伅");
 		return SUCCESS;
 	}
 	

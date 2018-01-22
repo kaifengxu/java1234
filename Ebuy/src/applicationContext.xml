@@ -23,7 +23,7 @@
 			value="jdbc:mysql://localhost:3306/db_ebuy">
 		</property>
 		<property name="username" value="root"></property>
-		<property name="password" value="123456"></property>
+		<property name="password" value="root"></property>
 	</bean>
       
     <!-- session工厂 -->  

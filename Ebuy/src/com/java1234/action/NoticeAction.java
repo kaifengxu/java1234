@@ -95,7 +95,7 @@ public class NoticeAction extends ActionSupport{
 	public String showNotice()throws Exception{
 		notice=noticeService.getNoticeById(noticeId);
 		mainPage="notice/noticeDetails.jsp";
-		navCode=NavUtil.genNavCode("公告信息");
+		navCode=NavUtil.genNavCode("鍏憡淇℃伅");
 		return SUCCESS;
 	}
 	

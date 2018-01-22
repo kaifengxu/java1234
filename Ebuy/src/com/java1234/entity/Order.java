@@ -25,7 +25,7 @@ public class Order {
 	private String orderNo;
 	private Date createTime;
 	private float cost;
-	private int status; // ×´Ì¬  1 ´ıÉóºË  2 ÉóºËÍ¨¹ı 3 Âô¼ÒÒÑ·¢»õ  4 ÒÑÊÕ»ñ
+	private int status; // çŠ¶æ€  1 å¾…å®¡æ ¸  2 å®¡æ ¸é€šè¿‡ 3 å–å®¶å·²å‘è´§  4 å·²æ”¶è·
 	private User user;
 	
 	private List<OrderProduct> orderProductList=new ArrayList<OrderProduct>();

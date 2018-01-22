@@ -167,7 +167,7 @@ public class ProductAction extends ActionSupport implements ServletRequestAware{
 			}
 		}
 		pageCode=PageUtil.genPagination(request.getContextPath()+"/product.action", total, Integer.parseInt(page), 8, param.toString());
-		navCode=NavUtil.genNavCode("商品列表");
+		navCode=NavUtil.genNavCode("鍟嗗搧鍒楄〃");
 		mainPage="product/productList.jsp";
 		return super.execute();
 	}
@@ -175,7 +175,7 @@ public class ProductAction extends ActionSupport implements ServletRequestAware{
 	public String showProduct()throws Exception{
 		product=productService.getProductById(productId);
 		saveCurrentBrowse(product);
-		navCode=NavUtil.genNavCode("商品详情");
+		navCode=NavUtil.genNavCode("鍟嗗搧璇︽儏");
 		mainPage="product/productDetails.jsp";
 		return SUCCESS;
 	}

@@ -172,7 +172,7 @@ public class OrderAction extends ActionSupport implements ServletRequestAware{
 		order.setCost(cost);
 		
 		orderService.saveOrder(order);
-		navCode=NavUtil.genNavCode("购物");
+		navCode=NavUtil.genNavCode("璐墿");
 		mainPage="shopping/shopping-result.jsp";
 		
 		session.removeAttribute("shoppingCart");
@@ -187,7 +187,7 @@ public class OrderAction extends ActionSupport implements ServletRequestAware{
 		}
 		s_order.setUser(currentUser);
 		orderList=orderService.findOrder(s_order, null);
-		navCode=NavUtil.genNavCode("个人中心");
+		navCode=NavUtil.genNavCode("涓汉涓績");
 		mainPage="userCenter/orderList.jsp";
 		return "orderList";
 	}

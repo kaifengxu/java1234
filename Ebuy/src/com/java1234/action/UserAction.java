@@ -130,14 +130,14 @@ public class UserAction extends ActionSupport implements ServletRequestAware{
 		HttpSession session=request.getSession();
 		User currentUser=userService.login(user);
 		if(!imageCode.equals(session.getAttribute("sRand"))){
-			error="ÑéÖ¤Âë´íÎó£¡";
+			error="éªŒè¯ç é”™è¯¯ï¼";
 			if(user.getStatus()==2){
 				return "adminError";
 			}else{
 				return ERROR;				
 			}
 		}else if(currentUser==null){
-			error="ÓÃ»§Ãû»òÃÜÂë´íÎó£¡";
+			error="ç”¨æˆ·åæˆ–å¯†ç é”™è¯¯ï¼";
 			if(user.getStatus()==2){
 				return "adminError";
 			}else{
@@ -169,13 +169,13 @@ public class UserAction extends ActionSupport implements ServletRequestAware{
 	}
 	
 	public String userCenter()throws Exception{
-		navCode=NavUtil.genNavCode("¸öÈËÖĞĞÄ");
+		navCode=NavUtil.genNavCode("ä¸ªäººä¸­å¿ƒ");
 		mainPage="userCenter/ucDefault.jsp";
 		return "userCenter";
 	}
 	
 	public String getUserInfo()throws Exception{
-		navCode=NavUtil.genNavCode("¸öÈËÖĞĞÄ");
+		navCode=NavUtil.genNavCode("ä¸ªäººä¸­å¿ƒ");
 		mainPage="userCenter/userInfo.jsp";
 		return "userCenter";
 	}
@@ -183,7 +183,7 @@ public class UserAction extends ActionSupport implements ServletRequestAware{
 	public String preSave()throws Exception{
 		HttpSession session=request.getSession();
 		user=(User) session.getAttribute("currentUser");
-		navCode=NavUtil.genNavCode("¸öÈËÖĞĞÄ");
+		navCode=NavUtil.genNavCode("ä¸ªäººä¸­å¿ƒ");
 		mainPage="userCenter/userSave.jsp";
 		return "userCenter";
 	}
@@ -192,7 +192,7 @@ public class UserAction extends ActionSupport implements ServletRequestAware{
 		HttpSession session=request.getSession();
 		userService.saveUser(user);
 		session.setAttribute("currentUser", user);
-		navCode=NavUtil.genNavCode("¸öÈËÖĞĞÄ");
+		navCode=NavUtil.genNavCode("ä¸ªäººä¸­å¿ƒ");
 		mainPage="userCenter/userInfo.jsp";
 		return "userCenter";
 	}

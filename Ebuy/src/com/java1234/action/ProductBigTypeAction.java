@@ -110,7 +110,7 @@ public class ProductBigTypeAction extends ActionSupport{
 		String []idsStr=ids.split(",");
 		for(int i=0;i<idsStr.length;i++){
 			if(productSmallTypeService.existSmallTypeWithBigTypeId(Integer.parseInt(idsStr[i]))){
-				result.put("exist", "商品大类包含商品小类");
+				result.put("exist", "鍟嗗搧澶х被鍖呭惈鍟嗗搧灏忕被");
 			}else{
 				ProductBigType productBigType=productBigTypeService.getProductBigTypeById(Integer.parseInt(idsStr[i]));
 				productBigTypeService.delete(productBigType);				
@@ -125,7 +125,7 @@ public class ProductBigTypeAction extends ActionSupport{
 		JSONArray jsonArray=new JSONArray();
 		JSONObject jsonObject=new JSONObject();
 		jsonObject.put("id", "");
-		jsonObject.put("name", "请选择...");
+		jsonObject.put("name", "璇烽�夋嫨...");
 		jsonArray.add(jsonObject);
 		List<ProductBigType> productBigTypeList=productBigTypeService.findAllBigTypeList();
 		JsonConfig jsonConfig=new JsonConfig();
